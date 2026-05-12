@@ -16,7 +16,7 @@
 
         section {
             position: relative;
-            width: 1600px;
+            width: 100%;
             margin: 0 auto;
             min-height: 100vh;
             background-color: skyblue;
@@ -111,10 +111,44 @@
 
         .thumb {
             position: absolute;
-            left: 50%;
             bottom: 20px;
             display: flex;
+            left: 50%;
             transform: translateX(-50%);
+        }
+        .thumb li {
+            list-style: none;
+            margin: 0 20px;
+            cursor: pointer;
+            transition: .3s;
+        }
+        .thumb li:hover {
+            transform: translateY(-15px);
+        }
+        .thumb li img {
+            max-width: 60px;
+        }
+
+        .sci {
+            position: absolute;
+            top: 50%;
+            right: 30px;
+            transform: translateY(-50%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .sci li {
+            list-style: none;
+        }
+        .circle {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #017143;
+            clip-path: circle(600px at right 800px);
         }
 
     </style>
