@@ -97,7 +97,7 @@
 
         .content .imgBox {
             width: 600px;
-            background-color: orange;
+            /* background-color: orange; */
             display: flex;
             justify-content: flex-end;
             padding-right: 50px;
@@ -174,13 +174,13 @@
             </div>
 
             <div class="imgBox">
-                <img src="./imgs/img1.png" alt="">
+                <img src="./imgs/img1.png" alt="" class="starbucks">
             </div>
         </div>
         <ul class="thumb">
-            <li><img src="./imgs/thumb1.png" alt=""></li>
-            <li><img src="./imgs/thumb2.png" alt=""></li>
-            <li><img src="./imgs/thumb3.png" alt=""></li>
+            <li><img src="./imgs/thumb1.png" alt="" onclick="imgSlider('./imgs/img1.png');changeCircleColor('#017143')"></li>
+            <li><img src="./imgs/thumb2.png" alt="" onclick="imgSlider('./imgs/img2.png');changeCircleColor('#eb7495')"></li>
+            <li><img src="./imgs/thumb3.png" alt="" onclick="imgSlider('./imgs/img3.png');changeCircleColor('#d752b1')"></li>
         </ul>
         <ul class="sci">
             <li><a href=""><img src="./imgs/facebook.png" alt=""></a></li>
@@ -188,5 +188,17 @@
             <li><a href=""><img src="./imgs/instagram.png" alt=""></a></li>
         </ul>
     </section>
+
+    <script>
+        function imgSlider(anything) {
+            document.querySelector('.starbucks').src = anything;
+        }
+
+        function changeCircleColor(color) {
+            const circle = document.querySelector('.circle');
+            circle.style.background = color;
+        }
+
+    </script>
 </body>
 </html>
