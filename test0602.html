@@ -16,7 +16,7 @@
             height: 646px;
             width: 1100px;
             margin: 0 auto;
-            /* background-color: skyblue; */
+            background-color: skyblue;
             position: relative;
         }
         .visual .title {
@@ -28,7 +28,7 @@
             position: absolute;
             bottom: 0;
             right: -47px;
-            /* background-color: orange; */
+            background-color: orange;
         }
 
         .visual .cup1.text {
@@ -40,7 +40,7 @@
             position: absolute;
             bottom: 0;
             right: 162px;
-            /* background-color: yellowgreen; */
+            background-color: yellowgreen;
         }
         .visual .cup2.text {
             position: absolute;
@@ -78,10 +78,9 @@
         gsap.from(fadeEls, {
             duration: 2,
             scale: .3,
-            ease: "elastic",
+            ease: "none",
             opacity: 0,
-            stagger: 0.7,
-            repeat: -1
+            stagger: 0.7
         })
     </script>
 </body>
